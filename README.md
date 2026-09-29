@@ -64,4 +64,8 @@ Note that the recalibrated model is **not** better than the simple baseline on t
 
 ## License
 
-Code and slides are released under the MIT License (see [`mayerfeld.consulting`](mayerfeld.consulting)). The cited papers remain the property of their publishers; this repository quotes only short facts and figures and links to the originals.
+Code and slides are released under the MIT License (see [`LICENSE`](LICENSE)). The cited papers remain the property of their publishers; this repository quotes only short facts and figures and links to the originals.
+
+## Author
+
+Maintained by Ferol Tatang
