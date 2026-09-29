@@ -66,6 +66,8 @@ Note that the recalibrated model is **not** better than the simple baseline on t
 
 Code and slides are released under the MIT License (see [`LICENSE`](LICENSE)). The cited papers remain the property of their publishers; this repository quotes only short facts and figures and links to the originals.
 
+MIT, see LICENSE. Copyright (c) Team 1 ai-operations-specialist mayerfeld.consulting
+
 ## Author
 
 Maintained by Ferol Tatang
