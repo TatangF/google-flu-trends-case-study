@@ -1,0 +1,24 @@
+name: notebooks
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  execute:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python-version }}
+          cache: pip
+      - name: Install dependencies
+        run: pip install -r requirements.txt nbconvert ipykernel
+      - name: Execute the English notebook
+        run: jupyter nbconvert --to notebook --execute notebooks/gft_simulation_en.ipynb --output "$RUNNER_TEMP/out_en.ipynb"
+      - name: Execute the French notebook
+        run: jupyter nbconvert --to notebook --execute notebooks/gft_simulation_fr.ipynb --output "$RUNNER_TEMP/out_fr.ipynb"

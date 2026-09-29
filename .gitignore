@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Office temporary/lock files (created while a deck is open in PowerPoint)
+~$*
+.~lock.*#
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
